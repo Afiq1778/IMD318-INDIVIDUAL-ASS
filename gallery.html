@@ -1,0 +1,261 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d2c5e;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    .gallery-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .gallery-section p {
+      text-align: center;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .landscape-center {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 260px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .landscape-card {
+      width: 600px;
+      height: 300px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+
+    .flip-card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .flip-card-back {
+      background-color: #1d2c5e;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      text-align: center;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-back p {
+      font-size: 15px;
+    }
+
+    .song-center {
+      margin-top: 30px;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .song-center h1 {
+      color: #1d2c5e;
+      margin-bottom: 15px;
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    .song-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .song-item {
+      text-align: center;
+    }
+
+    .song-item iframe,
+    .song-item audio {
+      width: 300px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo"> 
+    <img src="image/uitm-universiti-teknologi-mara-logo.png" width="150px" alt="UiTM Logo">
+  </div>
+  <nav class="main-nav">
+    <ul style="list-style: none; display: flex; gap: 20px;">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="education.html">EDUCATION</a></li>
+      <li><a href="experience.html">EXPERIENCE</a></li>
+      <li><a href="family.html">FAMILY</a></li>
+      <li><a href="gallery.html" class="active">GALLERY</a></li>
+      <li><a href="resume.html">RESUME</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="gallery-section">
+  <h1>MY GALLERY</h1>
+  <div class="gallery-grid">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image/mama adik.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="flip-card-back">
+          <p>Those who have been with me since the beginning, the love of a mother and the joy of siblings who brighten every moment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image/aku.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="flip-card-back">
+          <p>In the middle of the wedding celebration it was just me and the person who held my heart.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image/papa mama.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="flip-card-back">
+          <p>Different branches, same roots, together we share beautiful moments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landscape-center">
+    <div class="flip-card landscape-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image/class.jpg" alt="Landscape Image">
+        </div>
+        <div class="flip-card-back">
+          <p>From challenges to shared laughter this is the second family that shaped my journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-section">
+  <h1 style="margin-top: 0;">MY FAVOURITE FOOD</h1>
+  <p>Here are some of my favourite things that bring joy and comfort to my life.</p>
+
+  <div class="gallery-grid">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image/butter.jpg" alt="Favourite Food">
+        </div>
+        <div class="flip-card-back">
+          <p>My favourite food – I never say no to a buttermilk!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image/download (1).jpeg" alt="Favourite Place">
+        </div>
+        <div class="flip-card-back">
+          <p>Under the magical aurora lights in Iceland where peace and inspiration come to lifes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="song-center">
+  <h1>MY FAVOURITE MUSIC</h1>
+  <div class="song-grid">
+
+    <div class="song-item">
+      <iframe src="https://open.spotify.com/embed/track/5HCyWlXZPP0y6Gqq8TgA20?utm_source=generator"
+              width="300" height="80" frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+    </div>
+
+    <div class="song-item">
+      <iframe src="https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp?utm_source=generator"
+              width="300" height="80" frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+    </div>
+
+  </div>
+</div>
+
+<footer style="text-align: center; padding: 20px; background-color: #1d2c5e; color: white; margin-top: 50px;">
+  &copy; 2025 Muhamad Afiq Afnan Bin Amran. All rights reserved.
+</footer>
+
+</body>
+</html>
