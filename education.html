@@ -1,0 +1,200 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY EDUCATION</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d2c5e;
+      margin-top: 50px;
+    }
+
+    .education-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #1d2c5e;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .image-box {
+      width: 260px;
+      text-align: center;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-box p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      color: #1d2c5e;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1d2c5e;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <img src="image/uitm-universiti-teknologi-mara-logo.png" width="150px" alt="UiTM Logo" />
+    </div>
+    <nav class="main-nav">
+      <ul style="list-style: none; display: flex; gap: 20px;">
+        <li><a href="index.html"><i class="fas fa-house"></i> HOME</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> ABOUT</a></li>
+        <li><a href="education.html" class="active"><i class="fas fa-graduation-cap"></i> EDUCATION</a></li>
+        <li><a href="experience.html"><i class="fas fa-briefcase"></i> EXPERIENCE</a></li>
+        <li><a href="family.html"><i class="fas fa-people-roof"></i> FAMILY</a></li>
+        <li><a href="gallery.html"><i class="fas fa-image"></i> GALLERY</a></li>
+        <li><a href="resume.html"><i class="fas fa-file-lines"></i> RESUME</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="education-section">
+      <h1>MY EDUCATION</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>NO</th>
+            <th>INSTITUTIONS</th>
+            <th>YEAR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>UiTM Machang (DIPLOMA)</td>
+            <td>2023 - 2025</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sekolah Menengah Kebangsaan Tanjong Chat (SPM)</td>
+            <td>2017 - 2022</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Sekolah Kebangsaan Padang Garong 1 (UPSR)</td>
+            <td>2011 - 2016</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>PASTI Kota Bharu</td>
+            <td>2009 - 2010</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="image-gallery">
+        <div class="image-box">
+          <img src="image/pg.png" alt="SK Padang Garong 1" />
+          <p>Sekolah Kebangsaan Padang Garong 1</p>
+        </div>
+        <div class="image-box">
+          <img src="image/Screenshot 2025-07-03 062422.png" alt="SMK Tanjong Chat" />
+          <p>Sekolah Menengah Kebangsaan Tanjong Chat</p>
+        </div>
+        <div class="image-box">
+          <img src="image/feature1-mache.jpg" alt="UiTM Machang" />
+          <p>Universiti Teknologi MARA (UiTM) Machang</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Muhamad Afiq Afnan Bin Amran. All rights reserved.
+  </footer>
+
+</body>
+</html>
